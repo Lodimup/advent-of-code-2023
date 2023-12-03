@@ -135,7 +135,7 @@ def solution(
             Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
             "
     Returns:
-        int: The number of games that are possible
+        int: sum of the game numbers that are possible
     """
     total: int = 0
 
