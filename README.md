@@ -3,6 +3,13 @@ It's that time of the year again. This repo is for the https://adventofcode.com 
 
 Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. People use them as a speed contest, interview prep, company training, university coursework, practice problems, or to challenge each other.
 
+# Tips
+The elve will always give use two parts for each day's puzzle. The first part is usually a simple puzzle, and the second part is usually a more complex puzzle. The second part is usually a continuation of the first part.
+
+Anticipate the second part, and write your code in a way that makes it easy to extend it to the second part.
+
+`Just like the real dev work, ...oh... wait... this is supposed to be a game...`
+
 # Usage
 if you do not have poetry package manager installed, you can install it with:
 ```
@@ -13,8 +20,8 @@ poetry install
 make
 ```
 
-# Style Guide
-Python Zen
+# Python Zen
+```
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
@@ -34,3 +41,4 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
+```
