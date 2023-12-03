@@ -1,3 +1,12 @@
+"""
+This is the solution for day 2, part 1.
+This problems seems like a good candidate for OOP. There are 3 kinds of entities:
+- Game: A game consists of multiple rounds
+- GameRound: A game round consists of multiple hands
+- Bag: A bag consists of red, green, and blue cubes
+Let's create classes for each of these entities, so we can hold data and perform operations on them.
+"""
+
 from typing import List
 from utils import read_input
 

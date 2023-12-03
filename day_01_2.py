@@ -1,5 +1,10 @@
+"""It's a trap! Apparently, alphabetical numbers can overlap 
+eg. nineight should be parsed as 98
+"""
+
 import re
 from utils import read_input
+
 
 def _map_alpha_to_digit(num: str) -> str:
     """Converts a string representation of a number to a digit.
@@ -11,25 +16,25 @@ def _map_alpha_to_digit(num: str) -> str:
         ValueError: If the input is not a valid number string.
     """
     TABLE = {
-        'one': '1',
-        'two': '2',
-        'three': '3',
-        'four': '4',
-        'five': '5',
-        'six': '6',
-        'seven': '7',
-        'eight': '8',
-        'nine': '9',
-        'zero': '0'
+        "one": "1",
+        "two": "2",
+        "three": "3",
+        "four": "4",
+        "five": "5",
+        "six": "6",
+        "seven": "7",
+        "eight": "8",
+        "nine": "9",
+        "zero": "0",
     }
 
-    if num in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']:
+    if num in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]:
         return num
 
     ret = TABLE.get(num, None)
     if ret is None:
         raise ValueError(f"Invalid input: {num}")
-    
+
     return ret
 
 
