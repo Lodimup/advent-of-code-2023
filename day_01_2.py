@@ -1,5 +1,5 @@
-from utils import read_input
 import re
+from utils import read_input
 
 def _map_alpha_to_digit(num: str) -> str:
     """Converts a string representation of a number to a digit.
