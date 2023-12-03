@@ -7,32 +7,30 @@ def _map_alpha_to_digit(num: str) -> str:
         num (str): String representation of a number
     Returns:
         str: Digit representation of the number.
+    Raises:
+        ValueError: If the input is not a valid number string.
     """
+    TABLE = {
+        'one': '1',
+        'two': '2',
+        'three': '3',
+        'four': '4',
+        'five': '5',
+        'six': '6',
+        'seven': '7',
+        'eight': '8',
+        'nine': '9',
+        'zero': '0'
+    }
+
     if num in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']:
         return num
 
-    if num == 'one':
-        return '1'
-    elif num == 'two':
-        return '2'
-    elif num == 'three':
-        return '3'
-    elif num == 'four':
-        return '4'
-    elif num == 'five':
-        return '5'
-    elif num == 'six':
-        return '6'
-    elif num == 'seven':
-        return '7'
-    elif num == 'eight':
-        return '8'
-    elif num == 'nine':
-        return '9'
-    elif num == 'zero':
-        return '0'
-    else:
+    ret = TABLE.get(num, None)
+    if ret is None:
         raise ValueError(f"Invalid input: {num}")
+    
+    return ret
 
 
 def solution(file_path: str) -> int:
