@@ -114,3 +114,7 @@ def solution(file_path: str) -> int:
                 total += num.value
 
     return total
+
+
+if __name__ == "__main__":
+    print(solution("inputs/day_03_1.txt"))
