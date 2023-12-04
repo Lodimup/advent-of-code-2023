@@ -7,6 +7,12 @@ from utils import read_input
 
 
 def solution(file_path: str) -> int:
+    """Solution for day 4, part 1
+    Args:
+        file_path (str): The input file path
+    Returns:
+        int: The total
+    """
     data = read_input(file_path)
     total: int = 0
 

@@ -9,6 +9,10 @@ from utils import read_input
 
 def solution(file_path: str) -> int:
     """Solution for day 2, part 2
+    Args:
+        file_path (str): The input file path
+    Returns:
+        int: The total power
     """
     total: int = 0
 

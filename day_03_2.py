@@ -7,6 +7,12 @@ from day_03_1 import Num, Symbol
 
 
 def solution(file_path: str) -> int:
+    """The solution for day 3, part 2
+    Args:
+        file_path (str): The input file path
+    Returns:
+        int: The total
+    """
     total: int = 0
     nums: List[Num] = []
     symbols: List[Symbol] = []

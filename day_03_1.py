@@ -71,6 +71,12 @@ class Symbol:
 
 
 def solution(file_path: str) -> int:
+    """ Solution for day 3, part 1
+    Args:
+        file_path (str): The input file path
+    Returns:
+        int: The total
+    """
     total: int = 0
     nums: List[Num] = []
     symbols: List[Symbol] = []

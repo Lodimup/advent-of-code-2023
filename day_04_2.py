@@ -37,6 +37,10 @@ def parse_data(data: str) -> tuple[int, int]:
 
 def solution(file_path: str) -> int:
     """Solution to day 4 part 2.
+    Args:
+        file_path (str): The input file path
+    Returns:
+        int: The total
     """
     data = read_input(file_path)
     for line in data:
