@@ -119,7 +119,7 @@ def solution(
     bag_red: int,
     bag_green: int,
     bag_blue: int,
-):
+) -> int:
     """Solution for day 2, part 1
     - Create a Bag
     - Create a Game

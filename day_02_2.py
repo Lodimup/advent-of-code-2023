@@ -7,7 +7,7 @@ from day_02_1 import Game
 from utils import read_input
 
 
-def solution(file_path: str):
+def solution(file_path: str) -> int:
     """Solution for day 2, part 2
     """
     total: int = 0
