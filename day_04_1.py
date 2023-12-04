@@ -2,6 +2,7 @@
 1 win => 1 point
 more than 1 wins => 2 ** (number of hands - 1) points
 """
+import re
 from utils import read_input
 
 
@@ -14,6 +15,8 @@ def solution(file_path: str) -> int:
         game_num = line \
                 .split(":")[0] \
                 .split(" ")[1]
+        game_num = re.search(r"\d+", game_num)[0]
+        game_num = int(game_num)
         round_["game_num"] = game_num
 
         winning_nums = line \
