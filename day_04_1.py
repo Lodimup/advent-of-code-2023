@@ -33,7 +33,7 @@ def solution(file_path: str) -> int:
                 .split(" ")
         hands = [hand.strip() for hand in hands if hand.strip() != ""]
         
-        wins = [hand for hand in hands if hand in winning_nums]
+        wins = set(hands) & set(winning_nums)
 
         if len(wins) > 1:
             total += 2 ** (len(wins) - 1)
